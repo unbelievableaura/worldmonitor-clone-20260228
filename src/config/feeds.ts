@@ -1020,6 +1020,20 @@ const HAPPY_FEEDS: Record<string, Feed[]> = {
   ],
 };
 
+// War-only subset used for full variant (WW3 Monitor mode)
+const WAR_FEEDS: Record<string, Feed[]> = {
+  politics: FULL_FEEDS.politics || [],
+  crisis: FULL_FEEDS.crisis || [],
+  us: FULL_FEEDS.us || [],
+  europe: FULL_FEEDS.europe || [],
+  middleeast: FULL_FEEDS.middleeast || [],
+  africa: FULL_FEEDS.africa || [],
+  latam: FULL_FEEDS.latam || [],
+  asia: FULL_FEEDS.asia || [],
+  gov: FULL_FEEDS.gov || [],
+  thinktanks: FULL_FEEDS.thinktanks || [],
+};
+
 // Variant-aware exports
 export const FEEDS = SITE_VARIANT === 'tech'
   ? TECH_FEEDS
@@ -1027,7 +1041,7 @@ export const FEEDS = SITE_VARIANT === 'tech'
     ? FINANCE_FEEDS
     : SITE_VARIANT === 'happy'
       ? HAPPY_FEEDS
-      : FULL_FEEDS;
+      : WAR_FEEDS;
 
 export const SOURCE_REGION_MAP: Record<string, { labelKey: string; feedKeys: string[] }> = {
   // Full (geopolitical) variant regions
@@ -1038,7 +1052,7 @@ export const SOURCE_REGION_MAP: Record<string, { labelKey: string; feedKeys: str
   africa: { labelKey: 'header.sourceRegionAfrica', feedKeys: ['africa'] },
   latam: { labelKey: 'header.sourceRegionLatAm', feedKeys: ['latam'] },
   asia: { labelKey: 'header.sourceRegionAsiaPacific', feedKeys: ['asia'] },
-  topical: { labelKey: 'header.sourceRegionTopical', feedKeys: ['energy', 'tech', 'ai', 'finance', 'layoffs', 'thinktanks'] },
+  topical: { labelKey: 'header.sourceRegionTopical', feedKeys: ['crisis', 'gov', 'thinktanks'] },
   intel: { labelKey: 'header.sourceRegionIntel', feedKeys: [] },
 
   // Tech variant regions
