@@ -6,25 +6,25 @@
    ============================================================ */
 :root {
   /* Backgrounds */
-  --bg: #0a0a0a;
-  --bg-secondary: #111;
-  --surface: #141414;
-  --surface-hover: #1e1e1e;
-  --surface-active: #1a1a2e;
+  --bg: #050913;
+  --bg-secondary: #020617;
+  --surface: #0f172a;
+  --surface-hover: #162033;
+  --surface-active: #1b2942;
 
   /* Borders */
-  --border: #2a2a2a;
-  --border-strong: #444;
-  --border-subtle: #1a1a1a;
+  --border: #1e293b;
+  --border-strong: #334155;
+  --border-subtle: #0f172a;
 
   /* Text */
-  --text: #e8e8e8;
-  --text-secondary: #ccc;
-  --text-dim: #888;
-  --text-muted: #666;
-  --text-faint: #555;
-  --text-ghost: #444;
-  --accent: #fff;
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-dim: #64748b;
+  --text-muted: #64748b;
+  --text-faint: #475569;
+  --text-ghost: #334155;
+  --accent: #22d3ee;
 
   /* Overlays & shadows */
   --overlay-subtle: rgba(255, 255, 255, 0.03);
@@ -48,10 +48,10 @@
   --panel-border: #2a2a2a;
 
   /* Map */
-  --map-bg: #020a08;
-  --map-grid: #0a2a20;
-  --map-country: #0a2018;
-  --map-stroke: #0f5040;
+  --map-bg: #020617;
+  --map-grid: #0f172a;
+  --map-country: #111c33;
+  --map-stroke: #38bdf8;
 
   /* Font stack */
   --font-mono: 'SF Mono', 'Monaco', 'Cascadia Code', 'Fira Code', 'DejaVu Sans Mono', 'Liberation Mono', monospace;
@@ -72,37 +72,37 @@
    ============================================================ */
 :root {
   /* Severity levels */
-  --semantic-critical: #ff4444;
-  --semantic-high: #ff8800;
-  --semantic-elevated: #ffaa00;
-  --semantic-normal: #44aa44;
-  --semantic-low: #3388ff;
+  --semantic-critical: #f43f5e;
+  --semantic-high: #fb7185;
+  --semantic-elevated: #fbbf24;
+  --semantic-normal: #22d3ee;
+  --semantic-low: #38bdf8;
   --semantic-info: #3b82f6;
-  --semantic-positive: #44ff88;
+  --semantic-positive: #22d3ee;
 
   /* Threat levels */
-  --threat-critical: #ef4444;
-  --threat-high: #f97316;
-  --threat-medium: #eab308;
-  --threat-low: #22c55e;
+  --threat-critical: #f43f5e;
+  --threat-high: #fb7185;
+  --threat-medium: #fbbf24;
+  --threat-low: #22d3ee;
   --threat-info: #3b82f6;
 
   /* DEFCON levels */
-  --defcon-1: #ff0040;
-  --defcon-2: #ff4400;
-  --defcon-3: #ffaa00;
-  --defcon-4: #00aaff;
-  --defcon-5: #2d8a6e;
+  --defcon-1: #f43f5e;
+  --defcon-2: #fb7185;
+  --defcon-3: #fbbf24;
+  --defcon-4: #38bdf8;
+  --defcon-5: #22d3ee;
 
   /* Status indicators */
-  --status-live: #44ff88;
-  --status-cached: #ffaa00;
-  --status-unavailable: #ff4444;
+  --status-live: #22d3ee;
+  --status-cached: #fbbf24;
+  --status-unavailable: #f43f5e;
 
   /* Legacy color aliases (used by existing var() references) */
-  --red: #ff4444;
-  --green: #44ff88;
-  --yellow: #ffaa00;
+  --red: #f43f5e;
+  --green: #22d3ee;
+  --yellow: #fbbf24;
 }
 
 /* ============================================================
