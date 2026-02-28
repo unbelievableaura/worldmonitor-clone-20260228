@@ -12007,21 +12007,9 @@ a.prediction-link:hover {
   font-weight: bold;
 }
 
-/* deck.gl Layer Toggles */
+/* deck.gl Layer Toggles (removed for WW3 monitor simplified UI) */
 .deckgl-layer-toggles {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 100;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  max-width: 260px;
-  max-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  flex-wrap: nowrap;
+  display: none !important;
 }
 
 .deckgl-layer-toggles .toggle-header {
